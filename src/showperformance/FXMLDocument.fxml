@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="showperformance.FXMLDocumentController">
+   <center>
+      <LineChart fx:id="Diagram" title="Sorts Performancef" BorderPane.alignment="CENTER">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </center>
+   <bottom>
+      <HBox prefHeight="33.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="random" mnemonicParsing="false" onMouseClicked="#RandomClicked" prefHeight="25.0" prefWidth="100.0" text="Random Data" />
+            <Button fx:id="unsorted" mnemonicParsing="false" onMouseClicked="#UnsortedClicked" prefHeight="25.0" prefWidth="150.0" text="Reverse Sorted Data" />
+            <Button fx:id="sorted" mnemonicParsing="false" onMouseClicked="#SortedClicked" prefHeight="25.0" prefWidth="100.0" text="Sorted Data" />
+            <Button fx:id="same" mnemonicParsing="false" onMouseClicked="#SameClicked" prefHeight="25.0" prefWidth="100.0" text="Same Data" />
+            <Button fx:id="exit" mnemonicParsing="false" onMouseClicked="#ExitClicked" prefHeight="25.0" prefWidth="99.0" text="Exit" textAlignment="CENTER" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
